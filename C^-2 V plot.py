@@ -38,7 +38,7 @@ row = int(input("Enter row of data in file : "))
 v_col = int(input("Enter col of V in file : "))
 c_col = int(input("Enter col of C in file : "))
 
-Cox = 1.7976931348623157e+308
+Cox = 1.7976931348623157e-308
 
 with open(file,"r") as f:
     data = csv.reader(f)
@@ -47,7 +47,7 @@ with open(file,"r") as f:
         if (cnt >= row):
             v.append(float(i[v_col - 1]))
             c.append(1/(float(i[c_col - 1])**2))
-            Cox = min(Cox,float(i[c_col - 1]))
+            Cox = max(Cox,float(i[c_col - 1]))
 
 plt.plot(v,c,'-o')
 plt.xlabel("Voltage")
@@ -69,7 +69,7 @@ while True:
     
     # start_idx =  v.index(min(v, key = lambda x1 : abs(start_val - x1))) - 3
     # end_idx =  v.index(max(v, key = lambda x1 : abs(start_val - x1))) - 3
-    print(start_idx,end_idx)
+    print(f"Starting idx : {start_idx}\n Ending index : {end_idx}\n")
     plt.plot(v[start_idx:end_idx],c[start_idx:end_idx],'-o')
     plt.show()
     again = int(input("Press 1 to try again else 0 : "))
