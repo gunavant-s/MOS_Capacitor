@@ -69,7 +69,7 @@ while True:
     
     # start_idx =  v.index(min(v, key = lambda x1 : abs(start_val - x1))) - 3
     # end_idx =  v.index(max(v, key = lambda x1 : abs(start_val - x1))) - 3
-    print(f"Starting idx : {start_idx}\n Ending index : {end_idx}\n")
+    print(f"Starting idx : {start_idx}\nEnding index : {end_idx}\n")
     plt.plot(v[start_idx:end_idx],c[start_idx:end_idx],'-o')
     plt.show()
     again = int(input("Press 1 to try again else 0 : "))
@@ -255,3 +255,10 @@ while True:
     else:
         break
 
+Gm = 1
+Cm = 1
+Gp_w_max = (w*Gm*Cox*Cox)/((Gm**2) + (w*w*(Cox - Cm)*(Cox - Cm)))
+#Dit = (2 / LD)*((area*area/Cox)/((area*area/Cs)**2+(1-slope/area)**2))
+Dit = 2.5*Gp_w_max/(q*area)
+denom = ((Gm/(w*Cox))**2)+(1-Cm/Cox)**2
+DIT = Dit/denom
