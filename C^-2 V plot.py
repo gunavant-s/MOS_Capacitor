@@ -1,3 +1,8 @@
+# The acronym MOS stands for Metal oxide semiconductor. 
+# An MOS capacitor is made of a semiconductor body or substrate, an insulator and a metal electrode called a gate.
+# Practically the metal is a heavily doped n+ poly-silicon layer which behaves as a metal layer. 
+# The dielectric material used between the capacitor plates is silicon dioxide (SiO2).
+
 import csv
 import numpy as np
 import matplotlib.pyplot as plt
