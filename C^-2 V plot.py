@@ -6,7 +6,7 @@
 import csv
 import numpy as np
 import matplotlib.pyplot as plt
-from scipy.optimize import curve_fit 
+# from scipy.optimize import curve_fit 
 import sympy as sp
 import math
 from scipy import stats
