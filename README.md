@@ -55,23 +55,7 @@ MOS_Capacitor/
 ├── README.md                 # Project documentation
 ├── requirements.txt          # List of dependencies
 
-🚀 Getting Started
-Clone the Repository
-git clone https://github.com/gunavant-s/MOS_Capacitor.git
-cd MOS_Capacitor
-
-
-Run the Simulation
-Navigate to the src folder.
-Execute the Python script:
-bash
-Copy code
-python mos_capacitor.py
-The output plots will be saved in the results folder.
-
 📊 Results
 The simulation generates C-V curves showcasing:
-
 Transition between accumulation, depletion, and inversion regimes.
 Effects of varying doping concentration and oxide thickness.
-
