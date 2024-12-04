@@ -44,8 +44,10 @@ Ensure the following tools are installed before running the simulations:
 Install dependencies using:
 ```bash
 pip install -r requirements.txt
+```
 
 📂 Repository Structure
+```
 MOS_Capacitor/
 ├── src/                      # Source code for the simulations
 │   ├── mos_capacitor.py      # Core Python script for C-V simulation
@@ -54,8 +56,10 @@ MOS_Capacitor/
 ├── results/                  # Output plots and data
 ├── README.md                 # Project documentation
 ├── requirements.txt          # List of dependencies
+```
 
 📊 Results
+```
 The simulation generates C-V curves showcasing:
 Transition between accumulation, depletion, and inversion regimes.
 Effects of varying doping concentration and oxide thickness.
